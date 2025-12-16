@@ -5,18 +5,12 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class User extends Model
+class Division extends Model
 {
     use HasFactory;
 
     protected $fillable = [
         'name',
-        'username',
-        'password',
-        'role',
-    ];
-
-    protected $hidden = [
-        'password'
+        'description',
     ];
 }
